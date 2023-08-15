@@ -28,7 +28,7 @@ public class FoodController {
 	@GetMapping("/list")
 	public String listEmployees(Model theModel) {
 
-		//get employee from db
+		
 		List<Food> theFoods = foodService.findAll();
 		// add to the spring model
 		theModel.addAttribute("foods", theFoods);
@@ -39,7 +39,7 @@ public class FoodController {
 	@GetMapping("/showFormForAdd")
 	public String showFormForAdd(Model theModel) {
 
-		//create model attribute to bind form data
+		
 		Food theFoods = new Food();
 		// add to the spring model
 		theModel.addAttribute("foods", theFoods);
@@ -61,11 +61,11 @@ public class FoodController {
 	@GetMapping("/showFormForUpdate")
 	public String showFormForUpdate(@RequestParam("foodId")int theId ,Model theModel) {
 
-		//get he employee from the service
+		
 		Food theFood = foodService.findById(theId);
 		
 		
-		//set employee in the model to prepopulate the form
+		
 		theModel.addAttribute("foods", theFood);
 		
 
@@ -76,7 +76,7 @@ public class FoodController {
 	@GetMapping("/delete")
 	public String delete(@RequestParam("foodId")int theId) {
 
-		//delete an employee
+		
 		foodService.deleteById(theId);
 		
 	
