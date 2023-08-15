@@ -44,7 +44,7 @@ public class FoodController {
 		// add to the spring model
 		theModel.addAttribute("foods", theFoods);
 		
-		//theEmplyees.setFirstName("dor");
+		
 
 		return "foods/food-form";
 	}
