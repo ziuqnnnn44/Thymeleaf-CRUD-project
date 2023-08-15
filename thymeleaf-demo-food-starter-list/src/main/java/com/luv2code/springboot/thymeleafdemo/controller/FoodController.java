@@ -30,7 +30,7 @@ public class FoodController {
 
 		
 		List<Food> theFoods = foodService.findAll();
-		// add to the spring model
+		
 		theModel.addAttribute("foods", theFoods);
 
 		return "foods/list-foods";
@@ -41,7 +41,7 @@ public class FoodController {
 
 		
 		Food theFoods = new Food();
-		// add to the spring model
+		
 		theModel.addAttribute("foods", theFoods);
 		
 		
