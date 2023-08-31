@@ -1,7 +1,7 @@
 ### Hi there 👋 This is Miya!
 
 
-#### 🌱 整合授權、身份驗證與資料庫加密的登入系統:   
+#### 🌱 美食名單管理系統:   
 - 這裡紀錄吃過的美食以及當下的評論
 - 使用 Thymeleaf 和 Spring Boot 開發，以及完整的資料庫 CRUD 支持
 - 使用 Spring Data JPA 在資料庫上執行 CRUD 操作
